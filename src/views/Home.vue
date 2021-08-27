@@ -1,5 +1,58 @@
 <template>
-  <div></div>
+  <div class="home">
+    <a id="top" />
+    <div class="home_content">
+      <header class="home_header">
+        <h5 class="home_header_subtitle-1">
+          新商品・サービス創出型
+          <br class="pc-hide" />デジタルトランスフォーメーションの
+        </h5>
+        <h1 class="home_header_title">
+          概念実証・プロトタイプ <br class="pc-hide" />開発サービス
+        </h1>
+        <div class="home_header_subtitle-2">
+          DX Poc / MVP Prototype Development Service
+        </div>
+        <p class="home_header_intro">
+          お客様のデジタルトランスフォーメーション：DX<br
+            class="pc-hide"
+          />実現に向けて、エンタープライズ・アジャイルチームによるMVPを速やかに創出し、PoCを繰り返すことでお客様のDX事業成功支援を実現します。
+        </p>
+        <div class="home_header_btn_container">
+          <v-btn
+            :to="{ name: 'home', hash: '#work' }"
+            rounded
+            depressed
+            x-large
+            color="accent"
+            class="home_header_btn"
+          >
+          </v-btn>
+        </div>
+      </header>
+      <section class="main">
+        <div class="main_grid">
+          <div class="main_grid_child"></div>
+        </div>
+        <div class="main_seminar main_bg">
+          <div class="main_seminar_message">
+            <p></p>
+          </div>
+          <p class="main_subMessage">
+            住宅購入に関して、事前に知っておきたいことや、気になることはありませんか？まずは知識を身に付けるためにセミナー講座を見てみましょう。
+          </p>
+        </div>
+        <div class="main_seminar main_bg">
+          <div class="main_seminar_message">
+            <p></p>
+          </div>
+          <p class="main_subMessage">
+            住宅購入に関して、事前に知っておきたいことや、気になることはありませんか？まずは知識を身に付けるためにセミナー講座を見てみましょう。
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
 </template>
 <script>
 export default {
