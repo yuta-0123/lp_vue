@@ -100,4 +100,27 @@ export default {
     max-width: 100vw;
   }
 }
+
+.main {
+  position: relative;
+  &_grid {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    &_child {
+      height: 100%;
+      margin-top: 12rem;
+      border-right: 1px solid #fff;
+      width: 50%;
+    }
+  }
+  &_bg {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
 </style>
