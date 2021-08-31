@@ -97,6 +97,7 @@ export default {
 .home {
   &_header {
     background-repeat: no-repeat;
+    max-width: 100vw;
   }
 }
 </style>
