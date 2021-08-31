@@ -36,20 +36,39 @@
         </div>
         <div class="main_seminar main_bg">
           <div class="main_seminar_message">
-            <p></p>
+            <p>住宅購入に関するセミナーをみてみよう</p>
           </div>
           <p class="main_subMessage">
-            住宅購入に関して、事前に知っておきたいことや、気になることはありませんか？まずは知識を身に付けるためにセミナー講座を見てみましょう。
+            住宅購入に関して、事前に知っておきたいことや、<br>気になることはありませんか？<br>まずは知識を身に付けるために<br>セミナー講座を見てみましょう。
           </p>
         </div>
         <div class="main_seminar main_bg">
           <div class="main_seminar_message">
-            <p></p>
+            <p>チャットで気軽に質問</p>
           </div>
           <p class="main_subMessage">
-            住宅購入に関して、事前に知っておきたいことや、気になることはありませんか？まずは知識を身に付けるためにセミナー講座を見てみましょう。
+            質問したいと思っても電話だとためらってしまう・・<br>そんなときにチャットなら気軽に質問できます。
           </p>
         </div>
+        <div class="main_video main_bg">
+            <div class="main_video_message">
+              <p>具体的なお金の話を直接聞いてみたい</p>
+            </div>
+            <p class="main_subMessage">
+              具体的な提案を受けたい、質問したいことがたくさんある、そんな時は1on1のビデオ会議を活用しましょう。
+            </p>
+          </div>
+           <div class="main_simulation main_bg">
+            <div class="main_simulation_message">
+              <p></p>
+            </div>
+            <p class="main_subMessage">
+              ビデオ会議しながらその場でプラン出力や、<br>各カテゴリでの絞り込みが可能です。
+            </p>
+          </div>
+          <div class="main_story">
+            
+          </div>
       </section>
     </div>
   </div>
@@ -59,3 +78,10 @@ export default {
   name: "Home",
 };
 </script>
+<style lang="scss">
+.home {
+  &_header {
+    background-repeat: no-repeat;
+  }
+}
+</style>
