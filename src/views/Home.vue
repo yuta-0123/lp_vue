@@ -137,6 +137,12 @@ export default {
     background-size: cover;
     background-position: center;
   }
+  &_seminar {
+    background-image: url("assets/img/girl_1920.jpg");
+    &_message {
+      padding-top: 5rem;
+    }
+  }
 }
 @media (min-width: 768px) {
   .home {
