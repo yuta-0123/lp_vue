@@ -3,14 +3,14 @@
     <a id="top" />
     <div class="home_content">
       <header class="home_header">
-        <h5 class="home_header_subtitle-1">
+        <h5 class="home_header_subtitle">
           新商品・サービス創出型
           <br class="pc-hide" />デジタルトランスフォーメーションの
         </h5>
         <h1 class="home_header_title">
           概念実証・プロトタイプ <br class="pc-hide" />開発サービス
         </h1>
-        <div class="home_header_subtitle-2">
+        <div class="home_header_subtitle">
           DX Poc / MVP Prototype Development Service
         </div>
         <p class="home_header_intro">
@@ -98,9 +98,24 @@ export default {
   &_header {
     background-repeat: no-repeat;
     max-width: 100vw;
+    &_intro {
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    &_subtitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: $secondaryColor;
+    }
+    &_btn {
+      &_container {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }
-
 .main {
   position: relative;
   &_grid {
@@ -121,6 +136,30 @@ export default {
     height: 100vh;
     background-size: cover;
     background-position: center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    &_header {
+      padding-top: 5rem;
+      height: 62.5vw;
+      &_title {
+        margin: 0 0 1.484375vw;
+      }
+      &_subTitle {
+        font-size: 1.875vw;
+      }
+      &_intro {
+        padding: 3rem;
+        text-align: center;
+      }
+      &_btn {
+        &_icon {
+          font-size: 1.015625vw;
+          margin-left: 0.859375vw;
+        }
+      }
+    }
   }
 }
 </style>
