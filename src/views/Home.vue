@@ -30,65 +30,25 @@
           </v-btn>
         </div>
       </header>
-      <section class="main">
-        <div class="main_grid">
-          <div class="main_grid_child"></div>
-        </div>
-        <div class="main_seminar main_bg">
-          <div class="main_seminar_message">
-            <p>住宅購入に関するセミナーをみてみよう</p>
-          </div>
-          <p class="main_subMessage">
-            住宅購入に関して、事前に知っておきたいことや、<br />気になることはありませんか？<br />まずは知識を身に付けるために<br />セミナー講座を見てみましょう。
-          </p>
-        </div>
-        <div class="main_seminar main_bg">
-          <div class="main_seminar_message">
-            <p>チャットで気軽に質問</p>
-          </div>
-          <p class="main_subMessage">
-            質問したいと思っても電話だとためらってしまう・・<br />そんなときにチャットなら気軽に質問できます。
-          </p>
-        </div>
-        <div class="main_video main_bg">
-          <div class="main_video_message">
-            <p>具体的なお金の話を直接聞いてみたい</p>
-          </div>
-          <p class="main_subMessage">
-            具体的な提案を受けたい、質問したいことがたくさんある、そんな時は1on1のビデオ会議を活用しましょう。
-          </p>
-        </div>
-        <div class="main_simulation main_bg">
-          <div class="main_simulation_message">
-            <p></p>
-          </div>
-          <p class="main_subMessage">
-            ビデオ会議しながらその場でプラン出力や、<br />各カテゴリでの絞り込みが可能です。
-          </p>
-        </div>
-        <div class="main_story">
-          <div class="main_story_01 rellax" data-rellax-speed="-5">
-            <div class="main_story_01_img">
-              <img src="@/assets/img/conference_1280.jpg" alt="" />
-            </div>
-            <p class="main_story_message">
-              豊富なテーマ満載のセミナーから<br />住宅購入に関するセミナーをピックアップ。
-            </p>
-          </div>
-        </div>
-        <div class="main_story_02">
-          <div class="main_story_02_img">
-            <img src="@/assets/img/dog_1280.jpg" alt="" />
-          </div>
-          <p class="main_story_message">
-            「人生の三大資金準備 -住宅資金準備-」<br />資料を見ながらわかりやすく解説してくれます。
-          </p>
-        </div>
+      <section id="parallaxContainer">
+        <!-- 
+            class: translate / params: speed
+            class: fade / params: fadeIn, fadeInTransition, fadeOut, fadeOutTransition
+            class: slide / params: slideIn, slideInTransition, slideOut, slideOutTransition
+            class: dynStyle / params: styleAt, dynStyle
+          -->
+        <section
+          class="seminar"
+          scrollLength="2500"
+          scrollLengthMobile="1500"
+        ></section>
       </section>
     </div>
   </div>
 </template>
 <script>
+import $ from "jquery";
+
 export default {
   name: "Home",
 };
@@ -113,34 +73,6 @@ export default {
         display: flex;
         justify-content: center;
       }
-    }
-  }
-}
-.main {
-  position: relative;
-  &_grid {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    &_child {
-      height: 100%;
-      margin-top: 12rem;
-      border-right: 1px solid #fff;
-      width: 50%;
-    }
-  }
-  &_bg {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  &_seminar {
-    background-image: url("assets/img/girl_1920.jpg");
-    &_message {
-      padding-top: 5rem;
     }
   }
 }
